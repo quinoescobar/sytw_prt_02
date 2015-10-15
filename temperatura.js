@@ -28,6 +28,9 @@ Temperatura.prototype= new Medida();
 
 Temperatura.prototype.Celsius = function () {
   //AQUI SE PASA DE Celsius A Farenheit
+  //result = (num * 9/5)+32;
+  calculado = (this.getValor() * 9/5)+32;
+  return calculado;
 };
 
 Temperatura.prototype.Farenheit = function () {
