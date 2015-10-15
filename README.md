@@ -7,6 +7,6 @@ Se ha utilizado Mocha , Chai y Gulp; Mocha y Chai son utilizados para la creaci�
 
 Enlace página práctica [Cálculadora temperatura](https://quinoescobar.github.io/sytw_prt_02)
 
-Enlace test de la práctica [Cálculadora temperatura](https://quinoescobar.github.io/sytw_prt_02/tests/index.html)
+Enlace test de la práctica [Cálculadora temperatura](https://quinoescobar.github.io/sytw_prt_02/tests/)
 
 Enlace página author [Quinoescobar](https://quinoescobar.github.io)
