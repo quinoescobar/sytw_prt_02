@@ -37,6 +37,7 @@ Temperatura.prototype.Farenheit = function () {
   //AQUI SE PASA DE Farenheit A Celsius
   //result = (num - 32)*5/9;
   calculado2= (ths.getValor() - 32)*5/9;
+  return calculado2;
 };
 
 //ACOMODAR CÓDIGO PARA USAR LOS GETS Y LOS SETS
@@ -54,10 +55,11 @@ function calcular() {
   var x = temp.match(mejorRegex);
 
   if (x) {
-    var num = x[1];
-    var type = x[2];
-    num = parseFloat(num);
-    if (type == 'c' || type == 'C') {
+    var ingresado = new Temperatura();
+    ingresado.setValor(parseFloat(x[1]));
+    ingresado.setTipo(x[2]);
+    // num = parseFloat(num);
+    if (ingresado.setTipo == 'c' || type == 'C') {
       result = (num * 9/5)+32;
       //-------toFixed()------------
       // Convert a number into a string, keeping only two decimals:
