@@ -1,0 +1,174 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', '-g', 'install', 'blanket' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.2
+4 verbose install initial load of /usr/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/lib/package.json
+6 silly cache add args [ 'blanket', null ]
+7 verbose cache add spec blanket
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'blanket',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'blanket',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed blanket@*
+10 verbose addNamed "*" is a valid semver range for blanket
+11 silly addNameRange { name: 'blanket', range: '*', hasData: false }
+12 silly mapToRegistry name blanket
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/blanket
+16 verbose addNameRange registry:https://registry.npmjs.org/blanket not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/blanket
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 23:30:59
+20 verbose request id 8e04ed4141887760
+21 verbose etag "ACLPJT9GVQ2MC7Q12NGUOYPZI"
+22 http request GET https://registry.npmjs.org/blanket
+23 http 304 https://registry.npmjs.org/blanket
+24 silly get cb [ 304,
+24 silly get   { date: 'Thu, 15 Oct 2015 22:30:59 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"ACLPJT9GVQ2MC7Q12NGUOYPZI"',
+24 silly get     age: '14',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lcy1122-LCY',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1444948259.077596,VS0,VE0',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/blanket from cache
+26 verbose get saving blanket to /home/alu4635/.npm/registry.npmjs.org/blanket/.cache.json
+27 silly addNameRange number 2 { name: 'blanket', range: '*', hasData: true }
+28 silly addNameRange versions [ 'blanket',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.9.1',
+28 silly addNameRange     '0.9.4',
+28 silly addNameRange     '0.9.5',
+28 silly addNameRange     '0.9.6',
+28 silly addNameRange     '0.9.7',
+28 silly addNameRange     '0.9.8',
+28 silly addNameRange     '0.9.9',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6',
+28 silly addNameRange     '1.0.7',
+28 silly addNameRange     '1.0.8',
+28 silly addNameRange     '1.0.9',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.1.3',
+28 silly addNameRange     '1.1.4',
+28 silly addNameRange     '1.1.5',
+28 silly addNameRange     '1.1.6',
+28 silly addNameRange     '1.1.7' ] ]
+29 silly addNamed blanket@1.1.7
+30 verbose addNamed "1.1.7" is a plain semver version for blanket
+31 silly cache afterAdd blanket@1.1.7
+32 verbose afterAdd /home/alu4635/.npm/blanket/1.1.7/package/package.json not in flight; writing
+33 verbose afterAdd /home/alu4635/.npm/blanket/1.1.7/package/package.json written
+34 silly install resolved [ { name: 'blanket',
+34 silly install resolved     description: 'seamless js code coverage',
+34 silly install resolved     version: '1.1.7',
+34 silly install resolved     homepage: 'https://github.com/alex-seville/blanket',
+34 silly install resolved     author:
+34 silly install resolved      { name: 'Alex-Seville',
+34 silly install resolved        email: 'hi@alexanderseville.com',
+34 silly install resolved        url: 'http://blanketjs.org' },
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git://github.com/alex-seville/blanket.git' },
+34 silly install resolved     bugs: { url: 'https://github.com/alex-seville/blanket/issues' },
+34 silly install resolved     licenses: [ [Object] ],
+34 silly install resolved     main: 'src/index.js',
+34 silly install resolved     engines: { node: '>=0.10.7' },
+34 silly install resolved     dependencies: { esprima: '~1.2.2', falafel: '~0.3.1', xtend: '~3.0.0' },
+34 silly install resolved     devDependencies:
+34 silly install resolved      { async: '~0.9.0',
+34 silly install resolved        'coffee-script': '~1.7.1',
+34 silly install resolved        grunt: '~0.4.5',
+34 silly install resolved        'grunt-contrib-clean': '~0.5.0',
+34 silly install resolved        'grunt-contrib-concat': '~0.4.0',
+34 silly install resolved        'grunt-contrib-jshint': '~0.10.0',
+34 silly install resolved        'grunt-contrib-uglify': '~0.4.0',
+34 silly install resolved        'load-grunt-tasks': '~0.4.0',
+34 silly install resolved        mocha: '~1.20.1',
+34 silly install resolved        phantomjs: '1.8.2-0',
+34 silly install resolved        requirejs: '~2.1.14',
+34 silly install resolved        'travis-cov': '*',
+34 silly install resolved        'uglify-save-license': '~0.4.1' },
+34 silly install resolved     scripts: { test: 'grunt --verbose blanketTest' },
+34 silly install resolved     config: { blanket: [Object], 'travis-cov': [Object] },
+34 silly install resolved     keywords: [ 'coverage' ],
+34 silly install resolved     gitHead: '889dd3979ad5d5782daabec89b9c5986adb636cb',
+34 silly install resolved     _id: 'blanket@1.1.7',
+34 silly install resolved     _shasum: '24e1e5c50685bd2021f1d936aa0e20ead42bb6c9',
+34 silly install resolved     _from: 'blanket@*',
+34 silly install resolved     _npmVersion: '1.4.28',
+34 silly install resolved     _npmUser: { name: 'alexseville', email: 'hi@alexanderseville.com' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: '24e1e5c50685bd2021f1d936aa0e20ead42bb6c9',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install blanket@1.1.7 into /usr/lib
+36 info installOne blanket@1.1.7
+37 verbose installOne of blanket to /usr/lib not in flight; installing
+38 verbose lock using /home/alu4635/.npm/_locks/blanket-9e1374e7af9d48f6.lock for /usr/lib/node_modules/blanket
+39 silly install write writing blanket 1.1.7 to /usr/lib/node_modules/blanket
+40 verbose unbuild lib/node_modules/blanket
+41 silly gentlyRm /usr/lib/node_modules/blanket is being purged from base /usr
+42 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/blanket
+43 verbose tar unpack /home/alu4635/.npm/blanket/1.1.7/package.tgz
+44 verbose tar unpacking to /usr/lib/node_modules/blanket
+45 silly gentlyRm /usr/lib/node_modules/blanket is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/blanket
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 error tar.unpack untar error /home/alu4635/.npm/blanket/1.1.7/package.tgz
+49 verbose unlock done using /home/alu4635/.npm/_locks/blanket-9e1374e7af9d48f6.lock for /usr/lib/node_modules/blanket
+50 verbose fstream_path /usr/lib/node_modules/blanket
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/blanket'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /home/alu4635/sytw/practicas/practica2
+56 error Linux 3.16.0-4-amd64
+57 error argv "/usr/bin/nodejs" "/usr/bin/npm" "-g" "install" "blanket"
+58 error node v4.1.2
+59 error npm  v2.14.4
+60 error path /usr/lib/node_modules/blanket
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/blanket'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/blanket']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/lib/node_modules/blanket',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/lib/node_modules/blanket',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/blanket
+68 silly gentlyRm /usr/lib/node_modules/blanket is being purged from base /usr
+69 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/blanket

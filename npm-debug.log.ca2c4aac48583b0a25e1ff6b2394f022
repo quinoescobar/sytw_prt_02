@@ -1,0 +1,785 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'blanket' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.2
+4 verbose install initial load of /home/alu4635/sytw/practicas/practica2/package.json
+5 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/package.json
+6 silly cache add args [ 'blanket', null ]
+7 verbose cache add spec blanket
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'blanket',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'blanket',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed blanket@*
+10 verbose addNamed "*" is a valid semver range for blanket
+11 silly addNameRange { name: 'blanket', range: '*', hasData: false }
+12 silly mapToRegistry name blanket
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/blanket
+16 verbose addNameRange registry:https://registry.npmjs.org/blanket not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/blanket
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 23:30:45
+20 verbose request id 893ba8126c493f74
+21 http request GET https://registry.npmjs.org/blanket
+22 http 200 https://registry.npmjs.org/blanket
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"ACLPJT9GVQ2MC7Q12NGUOYPZI"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '35440',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Thu, 15 Oct 2015 22:30:45 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-lcy1123-LCY',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1444948245.016403,VS0,VE93',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving blanket to /home/alu4635/.npm/registry.npmjs.org/blanket/.cache.json
+25 silly addNameRange number 2 { name: 'blanket', range: '*', hasData: true }
+26 silly addNameRange versions [ 'blanket',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.9.1',
+26 silly addNameRange     '0.9.4',
+26 silly addNameRange     '0.9.5',
+26 silly addNameRange     '0.9.6',
+26 silly addNameRange     '0.9.7',
+26 silly addNameRange     '0.9.8',
+26 silly addNameRange     '0.9.9',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.0.1',
+26 silly addNameRange     '1.0.2',
+26 silly addNameRange     '1.0.3',
+26 silly addNameRange     '1.0.4',
+26 silly addNameRange     '1.0.5',
+26 silly addNameRange     '1.0.6',
+26 silly addNameRange     '1.0.7',
+26 silly addNameRange     '1.0.8',
+26 silly addNameRange     '1.0.9',
+26 silly addNameRange     '1.1.0',
+26 silly addNameRange     '1.1.1',
+26 silly addNameRange     '1.1.2',
+26 silly addNameRange     '1.1.3',
+26 silly addNameRange     '1.1.4',
+26 silly addNameRange     '1.1.5',
+26 silly addNameRange     '1.1.6',
+26 silly addNameRange     '1.1.7' ] ]
+27 silly addNamed blanket@1.1.7
+28 verbose addNamed "1.1.7" is a plain semver version for blanket
+29 silly mapToRegistry name blanket
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/blanket
+33 verbose addRemoteTarball https://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz',
+34 verbose addRemoteTarball   '24e1e5c50685bd2021f1d936aa0e20ead42bb6c9' ]
+35 info retry fetch attempt 1 at 23:30:45
+36 info attempt registry request try #1 at 23:30:45
+37 http fetch GET https://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz
+38 http fetch 200 https://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz
+39 silly fetchAndShaCheck shasum 24e1e5c50685bd2021f1d936aa0e20ead42bb6c9
+40 verbose addTmpTarball /tmp/npm-1022-311a1c30/registry.npmjs.org/blanket/-/blanket-1.1.7.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for blanket@1.1.7
+42 silly cache afterAdd blanket@1.1.7
+43 verbose afterAdd /home/alu4635/.npm/blanket/1.1.7/package/package.json not in flight; writing
+44 verbose afterAdd /home/alu4635/.npm/blanket/1.1.7/package/package.json written
+45 silly install resolved [ { name: 'blanket',
+45 silly install resolved     description: 'seamless js code coverage',
+45 silly install resolved     version: '1.1.7',
+45 silly install resolved     homepage: 'https://github.com/alex-seville/blanket',
+45 silly install resolved     author:
+45 silly install resolved      { name: 'Alex-Seville',
+45 silly install resolved        email: 'hi@alexanderseville.com',
+45 silly install resolved        url: 'http://blanketjs.org' },
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git://github.com/alex-seville/blanket.git' },
+45 silly install resolved     bugs: { url: 'https://github.com/alex-seville/blanket/issues' },
+45 silly install resolved     licenses: [ [Object] ],
+45 silly install resolved     main: 'src/index.js',
+45 silly install resolved     engines: { node: '>=0.10.7' },
+45 silly install resolved     dependencies: { esprima: '~1.2.2', falafel: '~0.3.1', xtend: '~3.0.0' },
+45 silly install resolved     devDependencies:
+45 silly install resolved      { async: '~0.9.0',
+45 silly install resolved        'coffee-script': '~1.7.1',
+45 silly install resolved        grunt: '~0.4.5',
+45 silly install resolved        'grunt-contrib-clean': '~0.5.0',
+45 silly install resolved        'grunt-contrib-concat': '~0.4.0',
+45 silly install resolved        'grunt-contrib-jshint': '~0.10.0',
+45 silly install resolved        'grunt-contrib-uglify': '~0.4.0',
+45 silly install resolved        'load-grunt-tasks': '~0.4.0',
+45 silly install resolved        mocha: '~1.20.1',
+45 silly install resolved        phantomjs: '1.8.2-0',
+45 silly install resolved        requirejs: '~2.1.14',
+45 silly install resolved        'travis-cov': '*',
+45 silly install resolved        'uglify-save-license': '~0.4.1' },
+45 silly install resolved     scripts: { test: 'grunt --verbose blanketTest' },
+45 silly install resolved     config: { blanket: [Object], 'travis-cov': [Object] },
+45 silly install resolved     keywords: [ 'coverage' ],
+45 silly install resolved     gitHead: '889dd3979ad5d5782daabec89b9c5986adb636cb',
+45 silly install resolved     _id: 'blanket@1.1.7',
+45 silly install resolved     _shasum: '24e1e5c50685bd2021f1d936aa0e20ead42bb6c9',
+45 silly install resolved     _from: 'blanket@*',
+45 silly install resolved     _npmVersion: '1.4.28',
+45 silly install resolved     _npmUser: { name: 'alexseville', email: 'hi@alexanderseville.com' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '24e1e5c50685bd2021f1d936aa0e20ead42bb6c9',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/blanket/-/blanket-1.1.7.tgz' } ]
+46 info install blanket@1.1.7 into /home/alu4635/sytw/practicas/practica2
+47 info installOne blanket@1.1.7
+48 verbose installOne of blanket to /home/alu4635/sytw/practicas/practica2 not in flight; installing
+49 verbose lock using /home/alu4635/.npm/_locks/blanket-955a0eda27739313.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+50 silly install write writing blanket 1.1.7 to /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+51 verbose unbuild node_modules/blanket
+52 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket is being purged from base /home/alu4635/sytw/practicas/practica2
+53 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+54 verbose tar unpack /home/alu4635/.npm/blanket/1.1.7/package.tgz
+55 verbose tar unpacking to /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+56 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket is being purged
+57 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm extractEntry LICENSE-MIT
+63 silly gunzTarPerm extractEntry CNAME
+64 silly gunzTarPerm extractEntry dist/.gitattributes
+65 silly gunzTarPerm extractEntry dist/jasmine/blanket_jasmine.js
+66 silly gunzTarPerm extractEntry dist/jasmine/blanket_jasmine.min.js
+67 silly gunzTarPerm extractEntry dist/mocha/blanket_mocha.js
+68 silly gunzTarPerm extractEntry dist/mocha/blanket_mocha.min.js
+69 silly gunzTarPerm extractEntry dist/qunit/blanket.js
+70 silly gunzTarPerm extractEntry dist/qunit/blanket.min.js
+71 silly gunzTarPerm extractEntry dist/qunit/.gitattributes
+72 silly gunzTarPerm extractEntry src/blanket.js
+73 silly gunzTarPerm extractEntry src/blanketRequire.js
+74 silly gunzTarPerm extractEntry src/blanket_browser.js
+75 silly gunzTarPerm extractEntry src/config.js
+76 silly gunzTarPerm extractEntry src/index.js
+77 silly gunzTarPerm extractEntry src/adapters/jasmine-2.x-blanket.js
+78 silly gunzTarPerm extractEntry src/adapters/jasmine-blanket.js
+79 silly gunzTarPerm extractEntry src/adapters/mocha-blanket.js
+80 silly gunzTarPerm extractEntry src/adapters/usage-blanket.js
+81 silly gunzTarPerm extractEntry src/adapters/yui-blanket.js
+82 silly gunzTarPerm extractEntry src/loaders/blanket_cs.js
+83 silly gunzTarPerm extractEntry src/node-loaders/coffee-script.js
+84 silly gunzTarPerm extractEntry src/qunit/noautorun.js
+85 silly gunzTarPerm extractEntry src/qunit/qunit.js
+86 silly gunzTarPerm extractEntry src/qunit/reporter.js
+87 silly gunzTarPerm extractEntry src/reporters/lcov_reporter.js
+88 silly gunzTarPerm extractEntry src/reporters/simple_json_reporter.js
+89 verbose write writing to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/package.json
+90 info preinstall blanket@1.1.7
+91 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/package.json
+92 silly prepareForInstallMany adding esprima@~1.2.2 from blanket dependencies
+93 silly prepareForInstallMany adding falafel@~0.3.1 from blanket dependencies
+94 silly prepareForInstallMany adding xtend@~3.0.0 from blanket dependencies
+95 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/package.json
+96 silly cache add args [ 'falafel@~0.3.1', null ]
+97 verbose cache add spec falafel@~0.3.1
+98 silly cache add parsed spec Result {
+98 silly cache add   raw: 'falafel@~0.3.1',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'falafel',
+98 silly cache add   rawSpec: '~0.3.1',
+98 silly cache add   spec: '>=0.3.1 <0.4.0',
+98 silly cache add   type: 'range' }
+99 silly addNamed falafel@>=0.3.1 <0.4.0
+100 verbose addNamed ">=0.3.1 <0.4.0" is a valid semver range for falafel
+101 silly addNameRange { name: 'falafel', range: '>=0.3.1 <0.4.0', hasData: false }
+102 silly mapToRegistry name falafel
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/falafel
+106 verbose addNameRange registry:https://registry.npmjs.org/falafel not in flight; fetching
+107 silly cache add args [ 'xtend@~3.0.0', null ]
+108 verbose cache add spec xtend@~3.0.0
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'xtend@~3.0.0',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'xtend',
+109 silly cache add   rawSpec: '~3.0.0',
+109 silly cache add   spec: '>=3.0.0 <3.1.0',
+109 silly cache add   type: 'range' }
+110 silly addNamed xtend@>=3.0.0 <3.1.0
+111 verbose addNamed ">=3.0.0 <3.1.0" is a valid semver range for xtend
+112 silly addNameRange { name: 'xtend', range: '>=3.0.0 <3.1.0', hasData: false }
+113 silly mapToRegistry name xtend
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/xtend
+117 verbose addNameRange registry:https://registry.npmjs.org/xtend not in flight; fetching
+118 silly cache add args [ 'esprima@~1.2.2', null ]
+119 verbose cache add spec esprima@~1.2.2
+120 silly cache add parsed spec Result {
+120 silly cache add   raw: 'esprima@~1.2.2',
+120 silly cache add   scope: null,
+120 silly cache add   name: 'esprima',
+120 silly cache add   rawSpec: '~1.2.2',
+120 silly cache add   spec: '>=1.2.2 <1.3.0',
+120 silly cache add   type: 'range' }
+121 silly addNamed esprima@>=1.2.2 <1.3.0
+122 verbose addNamed ">=1.2.2 <1.3.0" is a valid semver range for esprima
+123 silly addNameRange { name: 'esprima', range: '>=1.2.2 <1.3.0', hasData: false }
+124 silly mapToRegistry name esprima
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry uri https://registry.npmjs.org/esprima
+128 verbose addNameRange registry:https://registry.npmjs.org/esprima not in flight; fetching
+129 verbose request uri https://registry.npmjs.org/falafel
+130 verbose request no auth needed
+131 info attempt registry request try #1 at 23:30:47
+132 http request GET https://registry.npmjs.org/falafel
+133 verbose request uri https://registry.npmjs.org/esprima
+134 verbose request no auth needed
+135 info attempt registry request try #1 at 23:30:47
+136 http request GET https://registry.npmjs.org/esprima
+137 verbose request uri https://registry.npmjs.org/xtend
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 23:30:47
+140 verbose etag "7JN2PVLYKNG0NOGM2P9DNU5L"
+141 http request GET https://registry.npmjs.org/xtend
+142 http 304 https://registry.npmjs.org/xtend
+143 silly get cb [ 304,
+143 silly get   { date: 'Thu, 15 Oct 2015 22:30:46 GMT',
+143 silly get     via: '1.1 varnish',
+143 silly get     'cache-control': 'max-age=60',
+143 silly get     etag: '"7JN2PVLYKNG0NOGM2P9DNU5L"',
+143 silly get     age: '33',
+143 silly get     connection: 'keep-alive',
+143 silly get     'x-served-by': 'cache-fra1241-FRA',
+143 silly get     'x-cache': 'HIT',
+143 silly get     'x-cache-hits': '2',
+143 silly get     'x-timer': 'S1444948246.953736,VS0,VE0',
+143 silly get     vary: 'Accept' } ]
+144 verbose etag https://registry.npmjs.org/xtend from cache
+145 verbose get saving xtend to /home/alu4635/.npm/registry.npmjs.org/xtend/.cache.json
+146 silly addNameRange number 2 { name: 'xtend', range: '>=3.0.0 <3.1.0', hasData: true }
+147 silly addNameRange versions [ 'xtend',
+147 silly addNameRange   [ '1.0.0',
+147 silly addNameRange     '1.0.1',
+147 silly addNameRange     '1.0.2',
+147 silly addNameRange     '1.0.3',
+147 silly addNameRange     '2.0.1',
+147 silly addNameRange     '2.0.2',
+147 silly addNameRange     '2.0.3',
+147 silly addNameRange     '2.0.4',
+147 silly addNameRange     '2.0.5',
+147 silly addNameRange     '2.0.6',
+147 silly addNameRange     '2.1.1',
+147 silly addNameRange     '2.1.2',
+147 silly addNameRange     '2.2.0',
+147 silly addNameRange     '3.0.0',
+147 silly addNameRange     '4.0.0' ] ]
+148 silly addNamed xtend@3.0.0
+149 verbose addNamed "3.0.0" is a plain semver version for xtend
+150 silly mapToRegistry name xtend
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry uri https://registry.npmjs.org/xtend
+154 verbose addRemoteTarball https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz not in flight; adding
+155 verbose addRemoteTarball [ 'https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz',
+155 verbose addRemoteTarball   '5cce7407baf642cba7becda568111c493f59665a' ]
+156 info retry fetch attempt 1 at 23:30:47
+157 info attempt registry request try #1 at 23:30:47
+158 http fetch GET https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz
+159 http 200 https://registry.npmjs.org/falafel
+160 silly get cb [ 200,
+160 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+160 silly get     etag: '"DN50RQJTJ28U6HWNZSNGBVF14"',
+160 silly get     'content-type': 'application/json',
+160 silly get     'cache-control': 'max-age=60',
+160 silly get     'content-length': '25677',
+160 silly get     'accept-ranges': 'bytes',
+160 silly get     date: 'Thu, 15 Oct 2015 22:30:47 GMT',
+160 silly get     via: '1.1 varnish',
+160 silly get     age: '0',
+160 silly get     connection: 'keep-alive',
+160 silly get     'x-served-by': 'cache-fra1245-FRA',
+160 silly get     'x-cache': 'HIT',
+160 silly get     'x-cache-hits': '1',
+160 silly get     'x-timer': 'S1444948246.922940,VS0,VE105',
+160 silly get     vary: 'Accept' } ]
+161 verbose get saving falafel to /home/alu4635/.npm/registry.npmjs.org/falafel/.cache.json
+162 silly addNameRange number 2 { name: 'falafel', range: '>=0.3.1 <0.4.0', hasData: true }
+163 silly addNameRange versions [ 'falafel',
+163 silly addNameRange   [ '0.0.0',
+163 silly addNameRange     '0.0.1',
+163 silly addNameRange     '0.0.2',
+163 silly addNameRange     '0.1.0',
+163 silly addNameRange     '0.1.1',
+163 silly addNameRange     '0.1.2',
+163 silly addNameRange     '0.1.3',
+163 silly addNameRange     '0.1.4',
+163 silly addNameRange     '0.1.5',
+163 silly addNameRange     '0.1.6',
+163 silly addNameRange     '0.2.0',
+163 silly addNameRange     '0.2.1',
+163 silly addNameRange     '0.3.0',
+163 silly addNameRange     '0.3.1',
+163 silly addNameRange     '1.0.0',
+163 silly addNameRange     '1.0.1',
+163 silly addNameRange     '1.1.0',
+163 silly addNameRange     '1.1.1',
+163 silly addNameRange     '1.2.0' ] ]
+164 silly addNamed falafel@0.3.1
+165 verbose addNamed "0.3.1" is a plain semver version for falafel
+166 silly mapToRegistry name falafel
+167 silly mapToRegistry using default registry
+168 silly mapToRegistry registry https://registry.npmjs.org/
+169 silly mapToRegistry uri https://registry.npmjs.org/falafel
+170 verbose addRemoteTarball https://registry.npmjs.org/falafel/-/falafel-0.3.1.tgz not in flight; adding
+171 verbose addRemoteTarball [ 'https://registry.npmjs.org/falafel/-/falafel-0.3.1.tgz',
+171 verbose addRemoteTarball   'f3546748814f7d09543d19f2fb3d6090f136853d' ]
+172 info retry fetch attempt 1 at 23:30:47
+173 info attempt registry request try #1 at 23:30:47
+174 http fetch GET https://registry.npmjs.org/falafel/-/falafel-0.3.1.tgz
+175 http fetch 200 https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz
+176 silly fetchAndShaCheck shasum 5cce7407baf642cba7becda568111c493f59665a
+177 verbose addTmpTarball /tmp/npm-1022-311a1c30/registry.npmjs.org/xtend/-/xtend-3.0.0.tgz not in flight; adding
+178 verbose addTmpTarball already have metadata; skipping unpack for xtend@3.0.0
+179 silly cache afterAdd xtend@3.0.0
+180 verbose afterAdd /home/alu4635/.npm/xtend/3.0.0/package/package.json not in flight; writing
+181 verbose afterAdd /home/alu4635/.npm/xtend/3.0.0/package/package.json written
+182 http fetch 200 https://registry.npmjs.org/falafel/-/falafel-0.3.1.tgz
+183 silly fetchAndShaCheck shasum f3546748814f7d09543d19f2fb3d6090f136853d
+184 verbose addTmpTarball /tmp/npm-1022-311a1c30/registry.npmjs.org/falafel/-/falafel-0.3.1.tgz not in flight; adding
+185 verbose addTmpTarball already have metadata; skipping unpack for falafel@0.3.1
+186 silly cache afterAdd falafel@0.3.1
+187 verbose afterAdd /home/alu4635/.npm/falafel/0.3.1/package/package.json not in flight; writing
+188 verbose afterAdd /home/alu4635/.npm/falafel/0.3.1/package/package.json written
+189 http 200 https://registry.npmjs.org/esprima
+190 silly get cb [ 200,
+190 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+190 silly get     etag: '"AVSCUW57SRTFITAKH26IJ4XIX"',
+190 silly get     'content-type': 'application/json',
+190 silly get     'cache-control': 'max-age=60',
+190 silly get     'content-length': '58651',
+190 silly get     'accept-ranges': 'bytes',
+190 silly get     date: 'Thu, 15 Oct 2015 22:30:47 GMT',
+190 silly get     via: '1.1 varnish',
+190 silly get     age: '0',
+190 silly get     connection: 'keep-alive',
+190 silly get     'x-served-by': 'cache-fra1224-FRA',
+190 silly get     'x-cache': 'HIT',
+190 silly get     'x-cache-hits': '1',
+190 silly get     'x-timer': 'S1444948246.931401,VS0,VE707',
+190 silly get     vary: 'Accept' } ]
+191 verbose get saving esprima to /home/alu4635/.npm/registry.npmjs.org/esprima/.cache.json
+192 silly addNameRange number 2 { name: 'esprima', range: '>=1.2.2 <1.3.0', hasData: true }
+193 silly addNameRange versions [ 'esprima',
+193 silly addNameRange   [ '0.7.0',
+193 silly addNameRange     '0.8.0',
+193 silly addNameRange     '0.8.1',
+193 silly addNameRange     '0.8.2',
+193 silly addNameRange     '0.9.0',
+193 silly addNameRange     '0.9.1',
+193 silly addNameRange     '0.9.2',
+193 silly addNameRange     '0.9.3',
+193 silly addNameRange     '0.9.4',
+193 silly addNameRange     '0.9.5',
+193 silly addNameRange     '0.9.6',
+193 silly addNameRange     '0.9.7',
+193 silly addNameRange     '0.9.8',
+193 silly addNameRange     '0.9.9',
+193 silly addNameRange     '1.0.0',
+193 silly addNameRange     '1.0.1',
+193 silly addNameRange     '1.0.2',
+193 silly addNameRange     '1.0.3',
+193 silly addNameRange     '1.0.4',
+193 silly addNameRange     '1.1.0',
+193 silly addNameRange     '1.1.1',
+193 silly addNameRange     '1.2.0',
+193 silly addNameRange     '1.2.1',
+193 silly addNameRange     '1.2.2',
+193 silly addNameRange     '1.2.3',
+193 silly addNameRange     '1.2.4',
+193 silly addNameRange     '2.0.0',
+193 silly addNameRange     '1.2.5',
+193 silly addNameRange     '2.1.0',
+193 silly addNameRange     '2.2.0',
+193 silly addNameRange     '2.3.0',
+193 silly addNameRange     '2.4.0',
+193 silly addNameRange     '2.4.1',
+193 silly addNameRange     '2.5.0',
+193 silly addNameRange     '2.6.0' ] ]
+194 silly addNamed esprima@1.2.5
+195 verbose addNamed "1.2.5" is a plain semver version for esprima
+196 silly mapToRegistry name esprima
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry uri https://registry.npmjs.org/esprima
+200 verbose addRemoteTarball https://registry.npmjs.org/esprima/-/esprima-1.2.5.tgz not in flight; adding
+201 verbose addRemoteTarball [ 'https://registry.npmjs.org/esprima/-/esprima-1.2.5.tgz',
+201 verbose addRemoteTarball   '0993502feaf668138325756f30f9a51feeec11e9' ]
+202 info retry fetch attempt 1 at 23:30:48
+203 info attempt registry request try #1 at 23:30:48
+204 http fetch GET https://registry.npmjs.org/esprima/-/esprima-1.2.5.tgz
+205 http fetch 200 https://registry.npmjs.org/esprima/-/esprima-1.2.5.tgz
+206 silly fetchAndShaCheck shasum 0993502feaf668138325756f30f9a51feeec11e9
+207 verbose addTmpTarball /tmp/npm-1022-311a1c30/registry.npmjs.org/esprima/-/esprima-1.2.5.tgz not in flight; adding
+208 verbose addTmpTarball already have metadata; skipping unpack for esprima@1.2.5
+209 silly cache afterAdd esprima@1.2.5
+210 verbose afterAdd /home/alu4635/.npm/esprima/1.2.5/package/package.json not in flight; writing
+211 verbose afterAdd /home/alu4635/.npm/esprima/1.2.5/package/package.json written
+212 silly install resolved [ { name: 'xtend',
+212 silly install resolved     version: '3.0.0',
+212 silly install resolved     description: 'extend like a boss',
+212 silly install resolved     keywords: [ 'extend', 'merge', 'options', 'opts', 'object', 'array' ],
+212 silly install resolved     author: { name: 'Raynos', email: 'raynos2@gmail.com' },
+212 silly install resolved     repository: { type: 'git', url: 'git://github.com/Raynos/xtend.git' },
+212 silly install resolved     main: 'index',
+212 silly install resolved     scripts: { test: 'node test' },
+212 silly install resolved     dependencies: {},
+212 silly install resolved     devDependencies: { tape: '~1.1.0' },
+212 silly install resolved     homepage: 'https://github.com/Raynos/xtend',
+212 silly install resolved     contributors: [ [Object], [Object] ],
+212 silly install resolved     bugs:
+212 silly install resolved      { url: 'https://github.com/Raynos/xtend/issues',
+212 silly install resolved        email: 'raynos2@gmail.com' },
+212 silly install resolved     licenses: [ [Object] ],
+212 silly install resolved     testling: { files: 'test.js', browsers: [Object] },
+212 silly install resolved     engines: { node: '>=0.4' },
+212 silly install resolved     _id: 'xtend@3.0.0',
+212 silly install resolved     dist:
+212 silly install resolved      { shasum: '5cce7407baf642cba7becda568111c493f59665a',
+212 silly install resolved        tarball: 'http://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz' },
+212 silly install resolved     _from: 'xtend@>=3.0.0 <3.1.0',
+212 silly install resolved     _npmVersion: '1.4.6',
+212 silly install resolved     _npmUser: { name: 'raynos', email: 'raynos2@gmail.com' },
+212 silly install resolved     maintainers: [ [Object] ],
+212 silly install resolved     directories: {},
+212 silly install resolved     _shasum: '5cce7407baf642cba7becda568111c493f59665a',
+212 silly install resolved     _resolved: 'https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz' },
+212 silly install resolved   { name: 'falafel',
+212 silly install resolved     description: 'transform the ast on a recursive walk',
+212 silly install resolved     version: '0.3.1',
+212 silly install resolved     repository:
+212 silly install resolved      { type: 'git',
+212 silly install resolved        url: 'git://github.com/substack/node-falafel.git' },
+212 silly install resolved     main: 'index.js',
+212 silly install resolved     keywords: [ 'ast', 'source', 'traversal', 'syntax', 'tree', 'burrito' ],
+212 silly install resolved     directories: { example: 'example', test: 'test' },
+212 silly install resolved     scripts: { test: 'tape test/*.js' },
+212 silly install resolved     devDependencies: { tape: '~1.0.4' },
+212 silly install resolved     engines: { node: '>=0.4.0' },
+212 silly install resolved     license: 'MIT',
+212 silly install resolved     author:
+212 silly install resolved      { name: 'James Halliday',
+212 silly install resolved        email: 'mail@substack.net',
+212 silly install resolved        url: 'http://substack.net' },
+212 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+212 silly install resolved     bugs: { url: 'https://github.com/substack/node-falafel/issues' },
+212 silly install resolved     bundleDependencies: [ 'esprima' ],
+212 silly install resolved     _id: 'falafel@0.3.1',
+212 silly install resolved     dist:
+212 silly install resolved      { shasum: 'f3546748814f7d09543d19f2fb3d6090f136853d',
+212 silly install resolved        tarball: 'http://registry.npmjs.org/falafel/-/falafel-0.3.1.tgz' },
+212 silly install resolved     _from: 'falafel@>=0.3.1 <0.4.0',
+212 silly install resolved     _npmVersion: '1.3.0',
+212 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+212 silly install resolved     maintainers: [ [Object] ],
+212 silly install resolved     _shasum: 'f3546748814f7d09543d19f2fb3d6090f136853d',
+212 silly install resolved     _resolved: 'https://registry.npmjs.org/falafel/-/falafel-0.3.1.tgz' },
+212 silly install resolved   { name: 'esprima',
+212 silly install resolved     description: 'ECMAScript parsing infrastructure for multipurpose analysis',
+212 silly install resolved     homepage: 'http://esprima.org',
+212 silly install resolved     main: 'esprima.js',
+212 silly install resolved     bin:
+212 silly install resolved      { esparse: './bin/esparse.js',
+212 silly install resolved        esvalidate: './bin/esvalidate.js' },
+212 silly install resolved     version: '1.2.5',
+212 silly install resolved     files:
+212 silly install resolved      [ 'bin',
+212 silly install resolved        'test/run.js',
+212 silly install resolved        'test/runner.js',
+212 silly install resolved        'test/test.js',
+212 silly install resolved        'test/compat.js',
+212 silly install resolved        'test/reflect.js',
+212 silly install resolved        'esprima.js' ],
+212 silly install resolved     engines: { node: '>=0.4.0' },
+212 silly install resolved     author: { name: 'Ariya Hidayat', email: 'ariya.hidayat@gmail.com' },
+212 silly install resolved     maintainers: [ [Object] ],
+212 silly install resolved     repository: { type: 'git', url: 'http://github.com/ariya/esprima.git' },
+212 silly install resolved     bugs: { url: 'http://issues.esprima.org' },
+212 silly install resolved     licenses: [ [Object] ],
+212 silly install resolved     devDependencies:
+212 silly install resolved      { jslint: '~0.1.9',
+212 silly install resolved        eslint: '~0.4.3',
+212 silly install resolved        jscs: '~1.2.4',
+212 silly install resolved        istanbul: '~0.2.6',
+212 silly install resolved        'complexity-report': '~0.6.1',
+212 silly install resolved        regenerate: '~0.5.4',
+212 silly install resolved        'unicode-6.3.0': '~0.1.0',
+212 silly install resolved        'json-diff': '~0.3.1',
+212 silly install resolved        optimist: '~0.6.0' },
+212 silly install resolved     keywords: [ 'ast', 'ecmascript', 'javascript', 'parser', 'syntax' ],
+212 silly install resolved     scripts:
+212 silly install resolved      { 'generate-regex': 'node tools/generate-identifier-regex.js',
+212 silly install resolved        test: 'npm run-script lint && node test/run.js && npm run-script coverage && npm run-script complexity',
+212 silly install resolved        lint: 'npm run-script check-version && npm run-script eslint && npm run-script jscs && npm run-script jslint',
+212 silly install resolved        'check-version': 'node tools/check-version.js',
+212 silly install resolved        eslint: 'node node_modules/eslint/bin/eslint.js esprima.js',
+212 silly install resolved        jscs: 'node node_modules/jscs/bin/jscs esprima.js',
+212 silly install resolved        jslint: 'echo Skipping JSLint',
+212 silly install resolved        coverage: 'npm run-script analyze-coverage && npm run-script check-coverage',
+212 silly install resolved        'analyze-coverage': 'node node_modules/istanbul/lib/cli.js cover test/runner.js',
+212 silly install resolved        'check-coverage': 'node node_modules/istanbul/lib/cli.js check-coverage --statement 100 --branch 100 --function 100',
+212 silly install resolved        complexity: 'npm run-script analyze-complexity && npm run-script check-complexity',
+212 silly install resolved        'analyze-complexity': 'node tools/list-complexity.js',
+212 silly install resolved        'check-complexity': 'node node_modules/complexity-report/src/cli.js --maxcc 14 --silent -l -w esprima.js',
+212 silly install resolved        benchmark: 'node test/benchmarks.js',
+212 silly install resolved        'benchmark-quick': 'node test/benchmarks.js quick' },
+212 silly install resolved     gitHead: 'd3e376f04f096cb07f6b9fad0b44e9b6054f0582',
+212 silly install resolved     _id: 'esprima@1.2.5',
+212 silly install resolved     _shasum: '0993502feaf668138325756f30f9a51feeec11e9',
+212 silly install resolved     _from: 'esprima@>=1.2.2 <1.3.0',
+212 silly install resolved     _npmVersion: '2.5.1',
+212 silly install resolved     _nodeVersion: '0.12.0',
+212 silly install resolved     _npmUser: { name: 'ariya', email: 'ariya.hidayat@gmail.com' },
+212 silly install resolved     dist:
+212 silly install resolved      { shasum: '0993502feaf668138325756f30f9a51feeec11e9',
+212 silly install resolved        tarball: 'http://registry.npmjs.org/esprima/-/esprima-1.2.5.tgz' },
+212 silly install resolved     directories: {},
+212 silly install resolved     _resolved: 'https://registry.npmjs.org/esprima/-/esprima-1.2.5.tgz' } ]
+213 info install xtend@3.0.0 into /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+214 info install falafel@0.3.1 into /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+215 info install esprima@1.2.5 into /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+216 info installOne xtend@3.0.0
+217 verbose installOne of xtend to /home/alu4635/sytw/practicas/practica2/node_modules/blanket not in flight; installing
+218 info installOne falafel@0.3.1
+219 verbose installOne of falafel to /home/alu4635/sytw/practicas/practica2/node_modules/blanket not in flight; installing
+220 info installOne esprima@1.2.5
+221 verbose installOne of esprima to /home/alu4635/sytw/practicas/practica2/node_modules/blanket not in flight; installing
+222 verbose lock using /home/alu4635/.npm/_locks/xtend-655b7cbd55c1b9f4.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+223 verbose lock using /home/alu4635/.npm/_locks/falafel-5eac5c38c7e7cd47.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+224 verbose lock using /home/alu4635/.npm/_locks/esprima-cb8c28027ce80bb9.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+225 silly install write writing xtend 3.0.0 to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+226 silly install write writing falafel 0.3.1 to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+227 verbose unbuild node_modules/blanket/node_modules/xtend
+228 verbose unbuild node_modules/blanket/node_modules/falafel
+229 silly install write writing esprima 1.2.5 to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+230 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend is being purged from base /home/alu4635/sytw/practicas/practica2
+231 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+232 verbose unbuild node_modules/blanket/node_modules/esprima
+233 verbose tar unpack /home/alu4635/.npm/xtend/3.0.0/package.tgz
+234 verbose tar unpacking to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+235 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend is being purged
+236 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+237 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel is being purged from base /home/alu4635/sytw/practicas/practica2
+238 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+239 silly gunzTarPerm modes [ '755', '644' ]
+240 verbose tar unpack /home/alu4635/.npm/falafel/0.3.1/package.tgz
+241 verbose tar unpacking to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+242 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel is being purged
+243 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+244 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima is being purged from base /home/alu4635/sytw/practicas/practica2
+245 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+246 silly gunzTarPerm modes [ '755', '644' ]
+247 verbose tar unpack /home/alu4635/.npm/esprima/1.2.5/package.tgz
+248 verbose tar unpacking to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+249 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima is being purged
+250 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+251 silly gunzTarPerm modes [ '755', '644' ]
+252 silly gunzTarPerm extractEntry package.json
+253 silly gunzTarPerm extractEntry package.json
+254 silly gunzTarPerm extractEntry package.json
+255 silly gunzTarPerm extractEntry .npmignore
+256 silly gunzTarPerm extractEntry README.md
+257 silly gunzTarPerm extractEntry index.js
+258 silly gunzTarPerm extractEntry .travis.yml
+259 silly gunzTarPerm extractEntry README.md
+260 silly gunzTarPerm extractEntry esprima.js
+261 silly gunzTarPerm extractEntry LICENCE
+262 silly gunzTarPerm extractEntry index.js
+263 silly gunzTarPerm extractEntry example/array.js
+264 silly gunzTarPerm extractEntry example/keyword.js
+265 silly gunzTarPerm extractEntry ChangeLog
+266 silly gunzTarPerm extractEntry mutable.js
+267 silly gunzTarPerm extractEntry test.js
+268 silly gunzTarPerm extractEntry example/prompt.js
+269 silly gunzTarPerm extractEntry readme.markdown
+270 silly gunzTarPerm extractEntry LICENSE.BSD
+271 silly gunzTarPerm extractEntry bin/esparse.js
+272 silly gunzTarPerm extractEntry bin/esvalidate.js
+273 silly gunzTarPerm extractEntry test/compat.js
+274 silly gunzTarPerm extractEntry test/reflect.js
+275 silly gunzTarPerm extractEntry test/run.js
+276 silly gunzTarPerm extractEntry .jshintrc
+277 silly gunzTarPerm extractEntry Makefile
+278 silly gunzTarPerm extractEntry test/runner.js
+279 silly gunzTarPerm extractEntry test/test.js
+280 silly gunzTarPerm extractEntry test/array.js
+281 silly gunzTarPerm extractEntry test/async.js
+282 silly gunzTarPerm extractEntry test/for.js
+283 silly gunzTarPerm extractEntry test/keyword.js
+284 silly gunzTarPerm extractEntry test/parent.js
+285 silly gunzTarPerm extractEntry node_modules/esprima/package.json
+286 silly gunzTarPerm extractEntry node_modules/esprima/.npmignore
+287 silly gunzTarPerm extractEntry node_modules/esprima/README.md
+288 silly gunzTarPerm extractEntry node_modules/esprima/esprima.js
+289 silly gunzTarPerm extractEntry node_modules/esprima/bin/esparse.js
+290 silly gunzTarPerm extractEntry node_modules/esprima/bin/esvalidate.js
+291 silly gunzTarPerm extractEntry node_modules/esprima/component.json
+292 verbose write writing to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend/package.json
+293 info preinstall xtend@3.0.0
+294 silly gunzTarPerm extractEntry node_modules/esprima/ChangeLog
+295 silly gunzTarPerm extractEntry node_modules/esprima/LICENSE.BSD
+296 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend/package.json
+297 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend/package.json
+298 silly gunzTarPerm extractEntry node_modules/esprima/examples/detectnestedternary.js
+299 silly gunzTarPerm extractEntry node_modules/esprima/examples/findbooleantrap.js
+300 silly install resolved []
+301 verbose about to build /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+302 info build /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+303 silly gunzTarPerm extractEntry node_modules/esprima/examples/tokendist.js
+304 silly gunzTarPerm extractEntry node_modules/esprima/index.html
+305 info linkStuff xtend@3.0.0
+306 silly linkStuff xtend@3.0.0 has /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules as its parent node_modules
+307 silly gunzTarPerm extractEntry node_modules/esprima/test/test.js
+308 silly gunzTarPerm extractEntry node_modules/esprima/test/compare.js
+309 verbose linkBins xtend@3.0.0
+310 verbose linkMans xtend@3.0.0
+311 verbose rebuildBundles xtend@3.0.0
+312 info install xtend@3.0.0
+313 info postinstall xtend@3.0.0
+314 verbose unlock done using /home/alu4635/.npm/_locks/xtend-655b7cbd55c1b9f4.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/xtend
+315 silly gunzTarPerm extractEntry node_modules/esprima/test/compat.js
+316 silly gunzTarPerm extractEntry node_modules/esprima/test/benchmarks.js
+317 silly gunzTarPerm extractEntry node_modules/esprima/test/module.js
+318 silly gunzTarPerm extractEntry node_modules/esprima/test/reflect.js
+319 silly gunzTarPerm extractEntry node_modules/esprima/test/run.js
+320 silly gunzTarPerm extractEntry node_modules/esprima/test/runner.js
+321 silly gunzTarPerm extractEntry node_modules/esprima/test/index.html
+322 silly gunzTarPerm extractEntry node_modules/esprima/test/module.html
+323 silly gunzTarPerm extractEntry node_modules/esprima/test/compat.html
+324 silly gunzTarPerm extractEntry node_modules/esprima/test/compare.html
+325 silly gunzTarPerm extractEntry node_modules/esprima/test/coverage.html
+326 silly gunzTarPerm extractEntry node_modules/esprima/test/benchmarks.html
+327 silly gunzTarPerm extractEntry node_modules/esprima/test/esprima.js.html
+328 silly gunzTarPerm extractEntry node_modules/esprima/doc/index.html
+329 verbose write writing to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima/package.json
+330 info preinstall esprima@1.2.5
+331 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima/package.json
+332 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima/package.json
+333 silly install resolved []
+334 verbose about to build /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+335 info build /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+336 info linkStuff esprima@1.2.5
+337 silly linkStuff esprima@1.2.5 has /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules as its parent node_modules
+338 verbose linkBins esprima@1.2.5
+339 verbose link bins [ { esparse: './bin/esparse.js',
+339 verbose link bins     esvalidate: './bin/esvalidate.js' },
+339 verbose link bins   '/home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin',
+339 verbose link bins   false ]
+340 verbose linkMans esprima@1.2.5
+341 verbose rebuildBundles esprima@1.2.5
+342 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esparse is being purged
+343 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esparse
+344 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esvalidate is being purged
+345 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esvalidate
+346 verbose unlock done using /home/alu4635/.npm/_locks/esprima-cb8c28027ce80bb9.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+347 verbose write writing to /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/package.json
+348 info preinstall falafel@0.3.1
+349 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/package.json
+350 verbose readDependencies loading dependencies from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/package.json
+351 verbose targetResolver reading package data from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/esprima/package.json
+352 info package.json esprima@1.1.0-dev No license field.
+353 verbose installMany esprima@1.1.0-dev was bundled with falafel@0.3.1
+354 silly install resolved []
+355 verbose about to build /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+356 info build /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+357 info linkStuff falafel@0.3.1
+358 silly linkStuff falafel@0.3.1 has /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules as its parent node_modules
+359 verbose linkBins falafel@0.3.1
+360 verbose linkMans falafel@0.3.1
+361 verbose rebuildBundles falafel@0.3.1
+362 verbose rebuildBundles [ 'esprima' ]
+363 verbose rebuild bundle /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/esprima
+364 info build /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/esprima
+365 info preinstall esprima@1.1.0-dev
+366 info linkStuff esprima@1.1.0-dev
+367 silly linkStuff esprima@1.1.0-dev has /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules as its parent node_modules
+368 verbose linkBins esprima@1.1.0-dev
+369 verbose link bins [ { esparse: './bin/esparse.js',
+369 verbose link bins     esvalidate: './bin/esvalidate.js' },
+369 verbose link bins   '/home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/.bin',
+369 verbose link bins   false ]
+370 verbose linkMans esprima@1.1.0-dev
+371 verbose rebuildBundles esprima@1.1.0-dev
+372 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/.bin/esparse is being purged
+373 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/.bin/esparse
+374 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/.bin/esvalidate is being purged
+375 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel/node_modules/.bin/esvalidate
+376 verbose unlock done using /home/alu4635/.npm/_locks/falafel-5eac5c38c7e7cd47.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+377 verbose about to build /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+378 verbose unlock done using /home/alu4635/.npm/_locks/blanket-955a0eda27739313.lock for /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+379 verbose stack Error: EROFS: read-only file system, symlink '../esprima/bin/esparse.js' -> '/home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esparse'
+379 verbose stack     at Error (native)
+380 verbose cwd /home/alu4635/sytw/practicas/practica2
+381 error Linux 3.16.0-4-amd64
+382 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "blanket"
+383 error node v4.1.2
+384 error npm  v2.14.4
+385 error path ../esprima/bin/esparse.js
+386 error code EROFS
+387 error errno -30
+388 error syscall symlink
+389 error rofs EROFS: read-only file system, symlink '../esprima/bin/esparse.js' -> '/home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esparse'
+389 error rofs This is most likely not a problem with npm itself
+389 error rofs and is related to the file system being read-only.
+389 error rofs
+389 error rofs Often virtualized file systems, or other file systems
+389 error rofs that don't support symlinks, give this error.
+390 verbose exit [ -30, true ]
+391 verbose unbuild node_modules/blanket/node_modules/esprima
+392 info preuninstall esprima@1.2.5
+393 info uninstall esprima@1.2.5
+394 verbose unbuild rmStuff esprima@1.2.5 from /home/alu4635/sytw/practicas/practica2/node_modules
+395 verbose unbuild rmStuff in /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules
+396 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esparse is being gently removed
+397 silly gentlyRm verifying /home/alu4635/sytw/practicas/practica2 is an npm working directory
+398 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esvalidate is being gently removed
+399 silly gentlyRm verifying /home/alu4635/sytw/practicas/practica2 is an npm working directory
+400 silly gentlyRm containing path /home/alu4635/sytw/practicas/practica2 is under npm's control, in /home/alu4635/sytw/practicas/practica2
+401 silly gentlyRm deletion target /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esparse is under /home/alu4635/sytw/practicas/practica2
+402 verbose gentlyRm vacuuming from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esparse up to /home/alu4635/sytw/practicas/practica2
+403 silly gentlyRm containing path /home/alu4635/sytw/practicas/practica2 is under npm's control, in /home/alu4635/sytw/practicas/practica2
+404 silly gentlyRm deletion target /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esvalidate is under /home/alu4635/sytw/practicas/practica2
+405 verbose gentlyRm vacuuming from /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/.bin/esvalidate up to /home/alu4635/sytw/practicas/practica2
+406 info postuninstall esprima@1.2.5
+407 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima is being purged from base /home/alu4635/sytw/practicas/practica2
+408 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+409 silly vacuum-fs purging /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/esprima
+410 silly vacuum-fs quitting because other entries in /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules
+411 verbose unbuild node_modules/blanket/node_modules/falafel
+412 info preuninstall falafel@0.3.1
+413 info uninstall falafel@0.3.1
+414 verbose unbuild rmStuff falafel@0.3.1 from /home/alu4635/sytw/practicas/practica2/node_modules
+415 verbose unbuild rmStuff in /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules
+416 info postuninstall falafel@0.3.1
+417 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel is being purged from base /home/alu4635/sytw/practicas/practica2
+418 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+419 silly vacuum-fs purging /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules/falafel
+420 silly vacuum-fs quitting because other entries in /home/alu4635/sytw/practicas/practica2/node_modules/blanket/node_modules
+421 verbose unbuild node_modules/blanket
+422 info preuninstall blanket@1.1.7
+423 info uninstall blanket@1.1.7
+424 verbose unbuild rmStuff blanket@1.1.7 from /home/alu4635/sytw/practicas/practica2/node_modules
+425 info postuninstall blanket@1.1.7
+426 silly gentlyRm /home/alu4635/sytw/practicas/practica2/node_modules/blanket is being purged from base /home/alu4635/sytw/practicas/practica2
+427 verbose gentlyRm don't care about contents; nuking /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+428 silly vacuum-fs purging /home/alu4635/sytw/practicas/practica2/node_modules/blanket
+429 silly vacuum-fs removing /home/alu4635/sytw/practicas/practica2/node_modules
+430 silly vacuum-fs finished vacuuming up to /home/alu4635/sytw/practicas/practica2
