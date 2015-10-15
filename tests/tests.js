@@ -17,7 +17,7 @@ describe("Calcular", function() {
   describe("#calcular", function() {
     it("should throw if no target is passed in", function() {
       expect(function() {
-        (new Temperatura()).greets();
+        (new Temperatura()).calcular("43X");
       }).to.throw(Error);
     });
 
