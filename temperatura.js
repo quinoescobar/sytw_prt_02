@@ -21,13 +21,20 @@ Medida.prototype.setValor = function (arg) {
 
 function Temperatura()
 {
-  Medida.call(valor,tipo);
+  Medida.call(this,valor,tipo);
 }
 
 Temperatura.prototype= new Medida();
 
+Temperatura.prototype.Celsius = function () {
+  //AQUI SE PASA DE Celsius A Farenheit
+};
 
+Temperatura.prototype.Farenheit = function () {
+  //AQUI SE PASA DE Farenheit A Celsius
+};
 
+//ACOMODAR CÓDIGO PARA USAR LOS GETS Y LOS SETS
 function calcular() {
   var result;
   var original = document.getElementById("original");
