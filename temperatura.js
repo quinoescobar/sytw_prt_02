@@ -35,6 +35,8 @@ Temperatura.prototype.Celsius = function () {
 
 Temperatura.prototype.Farenheit = function () {
   //AQUI SE PASA DE Farenheit A Celsius
+  //result = (num - 32)*5/9;
+  calculado2= (ths.getValor() - 32)*5/9;
 };
 
 //ACOMODAR CÓDIGO PARA USAR LOS GETS Y LOS SETS
