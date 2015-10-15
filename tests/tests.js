@@ -1,11 +1,13 @@
 var expect = chai.expect;
 
-describe("Mocha", function() {
+describe("Testing con BDD", function() {
 
-  describe("Medida", function() {
-    it("should have a default name", function() {
-      var cow = new Cow();
-      expect(cow.name).to.equal("Anon cow");
+  describe("Temperatura", function() {
+    it("Deberia tener un campo valor", function() {
+      var paraCalcular = new Temperatura();
+      paraCalcular.setValor(43);
+      paraCalcular.setTipo("Faren");
+      expect(paraCalcular.getValor).to.equal("123456789");
     });
 
     it("should set cow's name if provided", function() {
