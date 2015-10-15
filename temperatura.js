@@ -71,7 +71,7 @@ function calcular()
     ingresado.setValor(parseFloat(x[1]));
     ingresado.setTipo(x[2]);
     // num = parseFloat(num);
-    if (ingresado.getTipo == 'c' || ingresado.getTipo == 'C') {
+    if (ingresado.getTipo() == 'c' || ingresado.getTipo() == 'C') {
       // result = (num * 9/5)+32;
       //-------toFixed()------------
       // Convert a number into a string, keeping only two decimals:
