@@ -30,11 +30,19 @@ describe("Testing con BDD", function() {
       }).to.throw(Error);
     });
 
-    it("should greet passed target", function() {
+    it("Deberia poder convertir Celsius a Farenheit", function() {
       var calculado = new Temperatura();
-      calculado.setValor();
-      calculado.setTipo();
-      expect(calculado).to.equal("6.1 Celsius");
+      calculado.setValor(0);
+      calculado.setTipo('C');
+      var resultado =calculado.Celsius();
+      expect(resultado).to.equal("32.0 Farenheit");
+    });
+    it("Deberia poder convertir Farenheit a Celsius", function() {
+      var calculado = new Temperatura();
+      calculado.setValor(43);
+      calculado.setTipo("F");
+      var resultado =calculado.Farenheit();
+      expect(resultado).to.equal("6.1 Celsius");
     });
   });
 });

@@ -34,7 +34,7 @@ Temperatura.prototype.Celsius = function ()
 {
   //AQUI SE PASA DE Celsius A Farenheit
   //result = (num * 9/5)+32;
-  calculado = (this.getValor() * 9/5)+32;
+  var calculado = (this.getValor() * 9/5)+32;
   calculado = calculado.toFixed(1)+" Farenheit";
 
   return calculado;
@@ -44,7 +44,7 @@ Temperatura.prototype.Farenheit = function ()
 {
   //AQUI SE PASA DE Farenheit A Celsius
   //result = (num - 32)*5/9;
-  calculado2= (this.getValor() - 32)*5/9;
+  var calculado2= (this.getValor() - 32)*5/9;
   calculado2 = calculado2.toFixed(1)+" Celsius";
 
   return calculado2;
