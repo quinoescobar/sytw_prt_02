@@ -74,6 +74,8 @@ describe("Testing con BDD", function() {
       calculado.setTipo('C');
       var resultado =calculado.Celsius();
       //expect(resultado).to.equal("32.0 Farenheit");
+      sinon.assert.notCalled(console.error);
+      sinon.assert.calledOnce(console.log);
       sinon.assert.calledWithExactly(console.log, "32.0 Farenheit");
     });
   });
