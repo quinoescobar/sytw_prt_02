@@ -1,4 +1,4 @@
-# Práctica 1- Contenido
+# Práctica 2- Contenido
 
 Este repositorio contiene la primera práctica de la asignatura Sistemas y Tencologías Web.
 La práctica consiste en realizar un conversor de temperaturas de grados Celsius a grados Farenheit y viceversa, utilizando NodeJS y JavaScript para la creación de la función que calcula la temperatura.

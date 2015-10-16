@@ -78,5 +78,13 @@ describe("Testing con BDD", function() {
       sinon.assert.calledOnce(console.log);
       sinon.assert.calledWithExactly(console.log, "32.0 Farenheit");
     });
+    it("Deberia sacar error al introducir 43X ", function() {
+      expect(function() {
+        (new Temperatura()).calcular("43X");
+        sinon.assert.notCalled(console.log);
+        sinon.assert.calledOnce(console.error);
+        sinon.assert.calledWithExactly(console.error, "missing target");
+      });
+    });
   });
 });
