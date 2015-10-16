@@ -93,8 +93,10 @@ function calcular()
     }
       //result = result.getValor() + " " + result.getTipo();
       converted.innerHTML = result;
+      console.log(result);
   }
   else {
+      console.error("missing target");
       converted.innerHTML = "¡ERROR! Intente con valores correctos [-,+] [Número] [Medida] e.g: '-4.2C' ";
   }
 }

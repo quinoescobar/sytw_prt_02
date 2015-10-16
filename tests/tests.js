@@ -52,4 +52,15 @@ describe("Testing con BDD", function() {
     //   expect(resultado).to.equal("6.1 Celsius");
     // });
   });
+  describe("#Calculando:Ahora con Sinon", function() {
+
+    it("Deberia poder convertir 0C a 32.0F", function() {
+      var calculado = new Temperatura();
+      calculado.setValor(0);
+      calculado.setTipo('C');
+      var resultado =calculado.Celsius();
+      //expect(resultado).to.equal("32.0 Farenheit");
+      sinon.assert.calledWithExactly(console.log, "32.0 Farenheit");
+    });
+  });
 });
