@@ -2,6 +2,20 @@ var expect = chai.expect;
 
 describe("Testing con BDD", function() {
 
+  beforeEach(function() {
+    // create a sandbox
+    sandbox = sinon.sandbox.create();
+
+    // stub some console methods
+    sandbox.stub(window.console, "log");
+    sandbox.stub(window.console, "error");
+  });
+
+  afterEach(function() {
+    // restore the environment as it was before
+    sandbox.restore();
+  });
+
   describe("Temperatura", function() {
     it("Deberia poder crearse un objeto Temperatura", function() {
       var paraCalcular = new Temperatura();
