@@ -44,5 +44,12 @@ describe("Testing con BDD", function() {
       var resultado =calculado.Farenheit();
       expect(resultado).to.equal("6.1 Celsius");
     });
+    // it("Deberia poder llamar al metodo calcular", function() {
+    //   var calculado = new Temperatura();
+    //   calculado.setValor(43);
+    //   calculado.setTipo("F");
+    //   var resultado =calculado.Farenheit();
+    //   expect(resultado).to.equal("6.1 Celsius");
+    // });
   });
 });
